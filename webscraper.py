@@ -35,9 +35,9 @@ class Website:
         """
         Get a specific tag.
 
-        :param tag_name: name of the tag
-        :param attr_type: type of tag attribute
-        :param attr_name: name of the attribute
+        :param tag_name: name of the tag ('div', 'span', 'tr', 'td', etc.)
+        :param attr_type: type of tag attribute ('id', 'class', etc.)
+        :param attr_name: name of the attribute (i.e. 'id='footer')
         :return: the specified tags
         """
         return self.open_page().find_all(tag_name, attrs={attr_type: attr_name})
